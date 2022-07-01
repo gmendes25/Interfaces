@@ -22,9 +22,9 @@ public class Curso {
 		System.out.println("Enter rental data: ");
 		System.out.println("Car model: ");
 		String carModel = sc.nextLine();
-		System.out.println("Pickup (dd/MM/yyyy HH:ss");
+		System.out.println("Pickup (dd/MM/yyyy HH:ss)");
 		Date start = sdf.parse(sc.nextLine());
-		System.out.println("Return (dd/MM/yyyy HH:ss");
+		System.out.println("Return (dd/MM/yyyy HH:ss)");
 		Date finish = sdf.parse(sc.nextLine());
 		
 		CarRental cr = new CarRental(start,finish, new Vehicle(carModel));
